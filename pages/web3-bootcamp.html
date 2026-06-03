@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web3 Dev Bootcamp — Build on Base with Alli</title>
+  <meta name="description" content="4-phase blockchain developer bootcamp for people who already know the basics. Learn Solidity, deploy on Base, connect smart contracts to your own stack. Free resources only." />
+  <meta name="keywords" content="web3 bootcamp, learn solidity, base chain developer, blockchain development, smart contracts, DeFi development, createwithalli, AlliOps" />
+  <meta property="og:title" content="Web3 Dev Bootcamp — Build on Base with Alli" />
+  <meta property="og:description" content="4-phase blockchain dev roadmap. Solidity, Foundry, Base chain, smart contracts — free resources, plain English, built for people who already code." />
+  <meta property="og:url" content="https://createwithalli.com/pages/web3-bootcamp.html" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://createwithalli.com/pages/web3-bootcamp.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="logo-wrap">
+    <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <circle cx="16" cy="16" r="14" stroke="var(--gold)" stroke-width="1.5"/>
+      <path d="M10 22 L16 8 L22 22" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11.8 18h8.4" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="16" cy="8" r="1.5" fill="var(--teal)"/>
+    </svg>
+    <span class="logo-text">Create <em>with</em> Alli</span>
+  </a>
+  <nav class="site-nav" id="siteNav">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="web3.html" class="nav-link">Web3</a>
+    <a href="learn.html" class="nav-link">Learn</a>
+    <a href="web3-bootcamp.html" class="nav-link active">Bootcamp</a>
+    <a href="content.html" class="nav-link">Content</a>
+    <a href="beauty.html" class="nav-link">Beauty</a>
+    <a href="amazon.html" class="nav-link">Amazon</a>
+    <a href="home-life.html" class="nav-link">Home & Life</a>
+    <a href="https://createwithalli.wordpress.com" target="_blank" rel="noopener" class="nav-link">Blog</a>
+  </nav>
+  <div class="header-actions">
+    <span class="live-badge"><span class="dot"></span>Free</span>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="bc-hero">
+    <div class="section-inner">
+      <p class="page-eyebrow">WEB3 DEV BOOTCAMP</p>
+      <h1 class="page-title">Build on Base.<br><em>Deploy Loudly.</em></h1>
+      <p class="page-subtitle">This is not a beginner course. If you already know how to code and want to build real things on-chain — this is the roadmap. 4 phases, 8 weeks, free resources only.</p>
+      <div class="bc-mission">
+        <span class="bc-quote">⛓️</span>
+        <blockquote>"Stack blockchain dev skills on top of an already-built foundation. You have the site, the agents, the Web3 context from SheFi, and the brain that builds systems. This is targeted skill acquisition."</blockquote>
+      </div>
+      <div class="bc-stats">
+        <div class="bc-stat"><span class="bcs-n">4</span><span class="bcs-l">Phases</span></div>
+        <div class="bc-stat"><span class="bcs-n">8</span><span class="bcs-l">Weeks</span></div>
+        <div class="bc-stat"><span class="bcs-n">0</span><span class="bcs-l">Cost</span></div>
+        <div class="bc-stat"><span class="bcs-n">Base</span><span class="bcs-l">Home chain</span></div>
+      </div>
+      <a href="#phase-1" class="btn btn--primary">START PHASE 1 →</a>
+      <a href="learn.html" class="btn btn--ghost" style="margin-left:12px">New to crypto first →</a>
+    </div>
+  </section>
+
+  <!-- WHERE YOU START -->
+  <section class="section section--navy">
+    <div class="section-inner">
+      <h2 class="section-title" style="margin-bottom:var(--sp6)">Where You Start</h2>
+      <div class="start-grid">
+        <div class="start-col start-col--have">
+          <h3 class="start-label start-label--teal">✓ Already Have</h3>
+          <ul class="start-list">
+            <li>HTML / CSS / JS (you built createwithalli.com)</li>
+            <li>AlliOps agent architecture</li>
+            <li>Web3 context from SheFi</li>
+            <li>Python scripting for agents</li>
+            <li>OPSEC mindset</li>
+            <li>Autonomous agent thinking</li>
+          </ul>
+        </div>
+        <div class="start-col start-col--need">
+          <h3 class="start-label start-label--coral">→ Still Need</h3>
+          <ul class="start-list">
+            <li>Solidity syntax</li>
+            <li>Smart contract deployment</li>
+            <li>Hardhat / Foundry tooling</li>
+            <li>On-chain interactions via ethers.js</li>
+            <li>Wallet security for dev environments</li>
+            <li>Connecting agents to smart contracts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END GOAL -->
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title-lg">End <em>Goal</em></h2>
+      <div class="goal-grid">
+        <div class="goal-card">
+          <span class="goal-icon">📝</span>
+          <p>Write and deploy your own smart contracts</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-icon">🤖</span>
+          <p>Connect AlliOps agents to on-chain data and contracts</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-icon">💸</span>
+          <p>Build dApps that generate revenue</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-icon">🔐</span>
+          <p>Understand DeFi protocols well enough to build on top of them</p>
+        </div>
+        <div class="goal-card goal-card--gold">
+          <span class="goal-icon">⛓️</span>
+          <p><strong>Financial sovereignty through code — not just theory.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section section--navy">
+    <div class="section-inner">
+      <h2 class="section-title" style="margin-bottom:var(--sp6)">The Stack</h2>
+      <div class="stack-grid">
+        <div class="stack-item">
+          <span class="stack-layer">Smart Contract Language</span>
+          <span class="stack-tech">Solidity</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Dev Framework</span>
+          <span class="stack-tech">Foundry <span class="stack-note">(faster, more professional than Hardhat)</span></span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Frontend Integration</span>
+          <span class="stack-tech">ethers.js or viem</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Testing</span>
+          <span class="stack-tech">Forge <span class="stack-note">(built into Foundry)</span></span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Chain</span>
+          <span class="stack-tech">Ethereum + Base <span class="stack-note">(L2 — cheaper to deploy)</span></span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Wallet Dev</span>
+          <span class="stack-tech">MetaMask + Anvil <span class="stack-note">(local testnet)</span></span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Storage</span>
+          <span class="stack-tech">IPFS / Pinata</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">IDE</span>
+          <span class="stack-tech">VS Code + Solidity extension</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHASE 1 -->
+  <section class="section" id="phase-1">
+    <div class="section-inner">
+      <div class="phase-card">
+        <div class="phase-header phase-header--blue">
+          <div class="phase-meta">
+            <span class="phase-num">Phase 01</span>
+            <span class="phase-time">Weeks 1–2</span>
+          </div>
+          <h2 class="phase-title">Solidity Foundations</h2>
+          <p class="phase-sub">Understand what actually happens when a transaction fires, then write your first contract from scratch.</p>
+        </div>
+        <div class="phase-body">
+          <div class="checklist">
+            <label class="check-item"><input type="checkbox" /> Understand EVM basics — what actually happens when a transaction fires</label>
+            <label class="check-item"><input type="checkbox" /> Solidity syntax: variables, functions, modifiers, events</label>
+            <label class="check-item"><input type="checkbox" /> Write your first contract: a simple storage contract</label>
+            <label class="check-item"><input type="checkbox" /> Deploy to local testnet with Foundry/Anvil</label>
+            <label class="check-item"><input type="checkbox" /> Understand wallets in a dev context — never use your real wallet</label>
+          </div>
+          <div class="phase-resources">
+            <h4 class="res-title">Resources for Phase 1</h4>
+            <div class="res-grid">
+              <a href="https://cryptozombies.io" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">CryptoZombies</span>
+                <span class="res-desc">Solidity basics — free, interactive, actually good</span>
+                <span class="res-link">cryptozombies.io →</span>
+              </a>
+              <a href="https://solidity-by-example.org" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">Solidity by Example</span>
+                <span class="res-desc">Patterns and syntax, clean reference</span>
+                <span class="res-link">solidity-by-example.org →</span>
+              </a>
+              <a href="https://book.getfoundry.sh" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">Foundry Book</span>
+                <span class="res-desc">Full Foundry tooling documentation</span>
+                <span class="res-link">book.getfoundry.sh →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#phase-2" class="btn btn--ghost" style="margin-top:var(--sp6)">PHASE 2: Smart Contract Patterns →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHASE 2 -->
+  <section class="section section--navy" id="phase-2">
+    <div class="section-inner">
+      <div class="phase-card" style="background:var(--card)">
+        <div class="phase-header phase-header--teal">
+          <div class="phase-meta">
+            <span class="phase-num">Phase 02</span>
+            <span class="phase-time">Weeks 3–4</span>
+          </div>
+          <h2 class="phase-title">Smart Contract Patterns</h2>
+          <p class="phase-sub">Write real token standards, learn security basics, and deploy to a test network for the first time.</p>
+        </div>
+        <div class="phase-body">
+          <div class="checklist">
+            <label class="check-item"><input type="checkbox" /> ERC-20 token standard — write one from scratch</label>
+            <label class="check-item"><input type="checkbox" /> ERC-721 NFT standard — mint your own</label>
+            <label class="check-item"><input type="checkbox" /> Ownable + Access Control patterns</label>
+            <label class="check-item"><input type="checkbox" /> Events and indexing</label>
+            <label class="check-item"><input type="checkbox" /> Security basics: reentrancy, overflow, front-running</label>
+            <label class="check-item"><input type="checkbox" /> Deploy to Base Sepolia testnet (free)</label>
+          </div>
+          <div class="phase-resources">
+            <h4 class="res-title">Resources for Phase 2</h4>
+            <div class="res-grid">
+              <a href="https://openzeppelin.com/contracts" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">OpenZeppelin</span>
+                <span class="res-desc">Production-grade contract templates — the standard</span>
+                <span class="res-link">openzeppelin.com →</span>
+              </a>
+              <a href="https://www.youtube.com/@PatrickAlphaC" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">Patrick Collins Course</span>
+                <span class="res-desc">Full Solidity bootcamp — 32 hours free on YouTube</span>
+                <span class="res-link">YouTube →</span>
+              </a>
+              <a href="https://secureum.xyz" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">Secureum</span>
+                <span class="res-desc">Smart contract security deep dive</span>
+                <span class="res-link">secureum.xyz →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#phase-3" class="btn btn--ghost" style="margin-top:var(--sp6)">PHASE 3: Connect to Your Stack →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHASE 3 -->
+  <section class="section" id="phase-3">
+    <div class="section-inner">
+      <div class="phase-card">
+        <div class="phase-header phase-header--gold">
+          <div class="phase-meta">
+            <span class="phase-num">Phase 03</span>
+            <span class="phase-time">Weeks 5–6</span>
+          </div>
+          <h2 class="phase-title">Connect to Your Stack</h2>
+          <p class="phase-sub">Wire your contracts to the frontend and to your AlliOps agent stack. Build a real dApp — front end, contract, and wallet connection together.</p>
+        </div>
+        <div class="phase-body">
+          <div class="checklist">
+            <label class="check-item"><input type="checkbox" /> ethers.js or viem — connect frontend to contracts</label>
+            <label class="check-item"><input type="checkbox" /> Call smart contracts from createwithalli.com</label>
+            <label class="check-item"><input type="checkbox" /> Connect an AlliOps agent to read on-chain data</label>
+            <label class="check-item"><input type="checkbox" /> Build a simple dApp — front end + contract + wallet connection</label>
+            <label class="check-item"><input type="checkbox" /> Store metadata on IPFS</label>
+          </div>
+          <div class="phase-resources">
+            <h4 class="res-title">Resources for Phase 3</h4>
+            <div class="res-grid">
+              <a href="https://wagmi.sh" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">wagmi</span>
+                <span class="res-desc">React hooks for Ethereum — easiest frontend integration</span>
+                <span class="res-link">wagmi.sh →</span>
+              </a>
+              <a href="https://university.alchemy.com" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">Alchemy University</span>
+                <span class="res-desc">Web3 dev fundamentals — free full program</span>
+                <span class="res-link">university.alchemy.com →</span>
+              </a>
+              <a href="https://docs.base.org" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">Base Docs</span>
+                <span class="res-desc">Official docs for building on Base L2</span>
+                <span class="res-link">docs.base.org →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#phase-4" class="btn btn--ghost" style="margin-top:var(--sp6)">PHASE 4: Build & Deploy Real →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHASE 4 -->
+  <section class="section section--navy" id="phase-4">
+    <div class="section-inner">
+      <div class="phase-card" style="background:var(--card)">
+        <div class="phase-header phase-header--coral">
+          <div class="phase-meta">
+            <span class="phase-num">Phase 04</span>
+            <span class="phase-time">Weeks 7–8</span>
+          </div>
+          <h2 class="phase-title">Build & Deploy Real</h2>
+          <p class="phase-sub">Mainnet. Real money. Real consequences. Audit before you deploy, document everything, and ship one revenue-generating mechanism on-chain.</p>
+        </div>
+        <div class="phase-body">
+          <div class="checklist">
+            <label class="check-item"><input type="checkbox" /> Deploy to Base mainnet (low gas, EVM compatible)</label>
+            <label class="check-item"><input type="checkbox" /> Write a contract that interacts with an AlliOps agent</label>
+            <label class="check-item"><input type="checkbox" /> Build one revenue-generating on-chain mechanism</label>
+            <label class="check-item"><input type="checkbox" /> Audit your own contract with Slither before deploying</label>
+            <label class="check-item"><input type="checkbox" /> Document everything in AlliOps Agent Tree</label>
+          </div>
+          <div class="phase-callout">
+            <span class="callout-icon">⚠️</span>
+            <p>Never deploy to mainnet without running Slither first. One vulnerability on mainnet is real money gone. Audit. Then deploy.</p>
+          </div>
+          <div class="phase-resources">
+            <h4 class="res-title">Resources for Phase 4</h4>
+            <div class="res-grid">
+              <a href="https://github.com/crytic/slither" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">Slither</span>
+                <span class="res-desc">Static analysis tool — audits your contracts automatically</span>
+                <span class="res-link">github.com/crytic/slither →</span>
+              </a>
+              <a href="https://docs.base.org/docs/using-base" target="_blank" rel="noopener" class="res-card">
+                <span class="res-name">Base Bridge Docs</span>
+                <span class="res-desc">Moving assets to Base mainnet</span>
+                <span class="res-link">docs.base.org →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEV OPSEC -->
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title" style="margin-bottom:var(--sp6)">🔐 Dev OPSEC Rules</h2>
+      <p style="color:var(--muted);font-size:var(--text-sm);margin-bottom:var(--sp6)">Non-negotiable. Learn these before you touch a line of Solidity.</p>
+      <div class="opsec-list">
+        <div class="opsec-item opsec-item--red">
+          <span class="opsec-icon">🚫</span>
+          <p><strong>NEVER use your main wallet for development.</strong> Create a dedicated dev wallet — fund only what you need for gas.</p>
+        </div>
+        <div class="opsec-item opsec-item--red">
+          <span class="opsec-icon">🚫</span>
+          <p><strong>Store private keys in .env — NEVER in code or Notion.</strong> .env goes in .gitignore before the first commit.</p>
+        </div>
+        <div class="opsec-item">
+          <span class="opsec-icon">✓</span>
+          <p>Use Anvil for local testing before any testnet deployment.</p>
+        </div>
+        <div class="opsec-item">
+          <span class="opsec-icon">✓</span>
+          <p>Audit every contract with Slither before mainnet — no exceptions.</p>
+        </div>
+        <div class="opsec-item">
+          <span class="opsec-icon">✓</span>
+          <p>Keep dev wallet and cold wallet completely separate — different seed phrases, different devices.</p>
+        </div>
+        <div class="opsec-item">
+          <span class="opsec-icon">✓</span>
+          <p>Document your deployed contract addresses — don't lose them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVENUE PLAYS -->
+  <section class="section section--navy">
+    <div class="section-inner">
+      <h2 class="section-title-lg">Revenue Plays Once <em>You Can Build</em></h2>
+      <div class="revenue-grid">
+        <div class="revenue-card">
+          <span class="revenue-icon">🪙</span>
+          <h3>AlliOps Token</h3>
+          <p>Deploy your own token for the AlliOps ecosystem</p>
+        </div>
+        <div class="revenue-card">
+          <span class="revenue-icon">💡</span>
+          <h3>On-Chain Tipping</h3>
+          <p>Build tipping directly into createwithalli.com — no middleman</p>
+        </div>
+        <div class="revenue-card">
+          <span class="revenue-icon">🔒</span>
+          <h3>Gated Content</h3>
+          <p>Smart contract-gated content — pay to access exclusive material</p>
+        </div>
+        <div class="revenue-card">
+          <span class="revenue-icon">🤖</span>
+          <h3>Hermes On-Chain</h3>
+          <p>Connect Hermes agent to DeFi data on-chain in real time</p>
+        </div>
+        <div class="revenue-card">
+          <span class="revenue-icon">🛠️</span>
+          <h3>Contract Auditing</h3>
+          <p>Build and audit contracts for other projects — freelance revenue</p>
+        </div>
+        <div class="revenue-card revenue-card--gold">
+          <span class="revenue-icon">🎯</span>
+          <h3>Target</h3>
+          <p>First real contract deployed by end of June 2026. Build in silence. Deploy loudly. 🔥</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL RESOURCES -->
+  <section class="section section--light">
+    <div class="section-inner">
+      <p class="section-eyebrow">FREE ONLY</p>
+      <h2 class="section-title-lg">Full Resource <em>List</em></h2>
+      <div class="resource-table">
+        <div class="rt-row rt-header">
+          <span>Resource</span><span>What It Covers</span><span>Link</span>
+        </div>
+        <div class="rt-row"><span>CryptoZombies</span><span>Solidity basics, interactive</span><a href="https://cryptozombies.io" target="_blank" rel="noopener">cryptozombies.io</a></div>
+        <div class="rt-row"><span>Solidity by Example</span><span>Patterns + syntax reference</span><a href="https://solidity-by-example.org" target="_blank" rel="noopener">solidity-by-example.org</a></div>
+        <div class="rt-row"><span>Foundry Book</span><span>Full Foundry tooling</span><a href="https://book.getfoundry.sh" target="_blank" rel="noopener">book.getfoundry.sh</a></div>
+        <div class="rt-row"><span>Patrick Collins Course</span><span>Full Solidity bootcamp (32hrs)</span><a href="https://www.youtube.com/@PatrickAlphaC" target="_blank" rel="noopener">YouTube (free)</a></div>
+        <div class="rt-row"><span>OpenZeppelin</span><span>Production contract templates</span><a href="https://openzeppelin.com/contracts" target="_blank" rel="noopener">openzeppelin.com</a></div>
+        <div class="rt-row"><span>Alchemy University</span><span>Web3 dev fundamentals</span><a href="https://university.alchemy.com" target="_blank" rel="noopener">university.alchemy.com</a></div>
+        <div class="rt-row"><span>Base Docs</span><span>Building on Base L2</span><a href="https://docs.base.org" target="_blank" rel="noopener">docs.base.org</a></div>
+        <div class="rt-row"><span>Secureum</span><span>Smart contract security</span><a href="https://secureum.xyz" target="_blank" rel="noopener">secureum.xyz</a></div>
+        <div class="rt-row"><span>Slither</span><span>Static contract analysis</span><a href="https://github.com/crytic/slither" target="_blank" rel="noopener">github.com/crytic/slither</a></div>
+        <div class="rt-row"><span>wagmi</span><span>React hooks for Ethereum</span><a href="https://wagmi.sh" target="_blank" rel="noopener">wagmi.sh</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--teal">
+    <div class="section-inner newsletter-inner">
+      <h2 class="newsletter-title">Follow the Build.</h2>
+      <p class="newsletter-sub">I'm documenting the whole process — mistakes included. Subscribe to get updates when new phases drop.</p>
+      <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="your@email.com" required class="newsletter-input" aria-label="Email address" />
+        <button type="submit" class="btn btn--dark">FOLLOW ALONG →</button>
+      </form>
+      <p class="newsletter-note" id="subscribeMsg"></p>
+      <div style="display:flex;flex-wrap:wrap;gap:var(--sp3);justify-content:center;margin-top:var(--sp6)">
+        <a href="https://www.tiktok.com/@alliopsdev" target="_blank" rel="noopener" class="btn btn--dark" style="font-size:var(--text-xs)">@alliopsdev TikTok</a>
+        <a href="https://www.instagram.com/alliopsec" target="_blank" rel="noopener" class="btn btn--dark" style="font-size:var(--text-xs)">@alliopsec Instagram</a>
+        <a href="https://www.youtube.com/@AlliOpsDev" target="_blank" rel="noopener" class="btn btn--dark" style="font-size:var(--text-xs)">@AlliOpsDev YouTube</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">Create <em>with</em> Alli</span>
+      <p class="footer-tagline">© 2026 Create with Alli · West Palm Beach, FL</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="https://www.instagram.com/aliciareviewsit" target="_blank" rel="noopener">@aliciareviewsit</a>
+      <a href="https://www.instagram.com/alliopsec" target="_blank" rel="noopener">@alliopsec</a>
+      <a href="https://www.tiktok.com/@fadesandhairshades" target="_blank" rel="noopener">@fadesandhairshades</a>
+      <a href="https://www.tiktok.com/@alliopsdev" target="_blank" rel="noopener">@alliopsdev</a>
+      <a href="https://www.youtube.com/@AlliOpsDev" target="_blank" rel="noopener">YOUTUBE</a>
+      <a href="https://www.amazon.com/shop/createwithalli?tag=alicialindsle-20" target="_blank" rel="noopener">AMAZON</a>
+      <a href="https://createwithalli.wordpress.com" target="_blank" rel="noopener">BLOG</a>
+      <a href="web3.html">WEB3</a>
+    </nav>
+    <p class="footer-legal">Educational content only — not financial advice · © 2026 Create with Alli</p>
+  </div>
+</footer>
+
+<style>
+.bc-hero { padding: var(--sp16) var(--sp6) var(--sp12); background: linear-gradient(135deg, var(--navy) 50%, color-mix(in srgb, var(--teal) 6%, var(--navy))); }
+.bc-mission { display:flex; gap:var(--sp4); align-items:flex-start; background:color-mix(in srgb,var(--teal) 6%,var(--card)); border:1px solid color-mix(in srgb,var(--teal) 20%,var(--border)); border-radius:var(--radius); padding:var(--sp5) var(--sp6); margin:var(--sp8) 0; }
+.bc-mission blockquote { font-family:var(--font-display); font-style:italic; font-size:var(--text-base); color:var(--cream); line-height:1.6; }
+.bc-quote { font-size:1.8rem; flex-shrink:0; }
+.bc-stats { display:flex; gap:var(--sp8); margin:var(--sp8) 0; flex-wrap:wrap; }
+.bc-stat  { display:flex; flex-direction:column; }
+.bcs-n { font-family:var(--font-display); font-size:var(--text-2xl); color:var(--teal); line-height:1; }
+.bcs-l { font-size:var(--text-xs); color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px; }
+
+.start-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp6); }
+@media(max-width:640px){.start-grid{grid-template-columns:1fr;}}
+.start-col { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:var(--sp6); }
+.start-label { font-size:var(--text-sm); font-weight:700; margin-bottom:var(--sp4); display:block; }
+.start-label--teal  { color:var(--teal); }
+.start-label--coral { color:var(--coral); }
+.start-list { list-style:none; display:flex; flex-direction:column; gap:var(--sp3); }
+.start-list li { font-size:var(--text-sm); color:var(--muted); padding-left:var(--sp4); position:relative; }
+.start-col--have .start-list li::before { content:'✓'; position:absolute; left:0; color:var(--teal); font-weight:700; }
+.start-col--need .start-list li::before { content:'→'; position:absolute; left:0; color:var(--coral); font-weight:700; }
+
+.goal-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:var(--sp4); }
+.goal-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:var(--sp5); display:flex; flex-direction:column; gap:var(--sp3); }
+.goal-card--gold { background:color-mix(in srgb,var(--gold) 8%,var(--card)); border-color:color-mix(in srgb,var(--gold) 30%,var(--border)); }
+.goal-icon { font-size:1.8rem; }
+.goal-card p { font-size:var(--text-sm); color:var(--muted); line-height:1.6; }
+.goal-card--gold p { color:var(--cream); }
+
+.stack-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:var(--sp3); }
+.stack-item { background:var(--card); border:1px solid var(--border); border-radius:var(--radius-sm); padding:var(--sp4); display:flex; flex-direction:column; gap:4px; }
+.stack-layer { font-size:var(--text-xs); color:var(--muted); text-transform:uppercase; letter-spacing:1px; }
+.stack-tech  { font-size:var(--text-base); font-weight:700; color:var(--teal); }
+.stack-note  { font-size:var(--text-xs); color:var(--muted); font-weight:400; }
+
+.phase-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+.phase-header { padding:var(--sp8); }
+.phase-header--blue  { background:linear-gradient(135deg,color-mix(in srgb,#3b82f6 15%,var(--navy)),var(--navy)); }
+.phase-header--teal  { background:linear-gradient(135deg,color-mix(in srgb,var(--teal) 15%,var(--navy)),var(--navy)); }
+.phase-header--gold  { background:linear-gradient(135deg,color-mix(in srgb,var(--gold) 15%,var(--navy)),var(--navy)); }
+.phase-header--coral { background:linear-gradient(135deg,color-mix(in srgb,var(--coral) 15%,var(--navy)),var(--navy)); }
+.phase-meta { display:flex; align-items:center; gap:var(--sp4); margin-bottom:var(--sp3); }
+.phase-num  { font-size:var(--text-xs); font-weight:700; letter-spacing:2px; color:var(--teal); text-transform:uppercase; }
+.phase-time { font-size:var(--text-xs); color:var(--muted); background:var(--card); padding:3px 10px; border-radius:999px; border:1px solid var(--border); }
+.phase-title { font-family:var(--font-display); font-size:var(--text-xl); color:var(--cream); margin-bottom:var(--sp2); }
+.phase-sub   { font-size:var(--text-sm); color:var(--muted); max-width:55ch; }
+.phase-body  { padding:var(--sp8); display:flex; flex-direction:column; gap:var(--sp6); }
+
+.checklist { display:flex; flex-direction:column; gap:var(--sp3); }
+.check-item { display:flex; align-items:flex-start; gap:var(--sp3); font-size:var(--text-sm); color:var(--muted); cursor:pointer; line-height:1.6; }
+.check-item input { accent-color:var(--teal); margin-top:3px; flex-shrink:0; width:16px; height:16px; cursor:pointer; }
+.check-item:has(input:checked) { color:var(--teal); text-decoration:line-through; opacity:0.6; }
+
+.phase-resources { border-top:1px solid var(--border); padding-top:var(--sp6); }
+.res-title { font-size:var(--text-xs); font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:var(--sp4); }
+.res-grid  { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:var(--sp3); }
+.res-card  { background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:var(--sp4); display:flex; flex-direction:column; gap:var(--sp2); transition:border-color var(--trans); }
+.res-card:hover { border-color:var(--teal); }
+.res-name  { font-size:var(--text-sm); font-weight:700; color:var(--cream); }
+.res-desc  { font-size:var(--text-xs); color:var(--muted); line-height:1.5; flex:1; }
+.res-link  { font-size:var(--text-xs); color:var(--teal); font-weight:600; }
+
+.phase-callout { background:color-mix(in srgb,var(--coral) 8%,var(--bg)); border:1px solid color-mix(in srgb,var(--coral) 30%,var(--border)); border-radius:var(--radius-sm); padding:var(--sp4) var(--sp5); display:flex; gap:var(--sp3); align-items:flex-start; }
+.phase-callout p { font-size:var(--text-sm); color:var(--muted); line-height:1.6; }
+.callout-icon { font-size:1.2rem; flex-shrink:0; }
+
+.opsec-list { display:flex; flex-direction:column; gap:var(--sp3); }
+.opsec-item { display:flex; align-items:flex-start; gap:var(--sp4); background:var(--card); border:1px solid var(--border); border-radius:var(--radius-sm); padding:var(--sp4) var(--sp5); }
+.opsec-item--red { border-color:color-mix(in srgb,var(--coral) 35%,var(--border)); background:color-mix(in srgb,var(--coral) 5%,var(--card)); }
+.opsec-icon { font-size:1.2rem; flex-shrink:0; margin-top:2px; }
+.opsec-item p { font-size:var(--text-sm); color:var(--muted); line-height:1.6; }
+.opsec-item--red p { color:var(--cream); }
+
+.revenue-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:var(--sp4); }
+.revenue-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:var(--sp6); display:flex; flex-direction:column; gap:var(--sp2); }
+.revenue-card--gold { background:color-mix(in srgb,var(--gold) 8%,var(--card)); border-color:color-mix(in srgb,var(--gold) 30%,var(--border)); }
+.revenue-icon { font-size:2rem; }
+.revenue-card h3 { font-size:var(--text-base); font-weight:700; color:var(--teal); }
+.revenue-card p  { font-size:var(--text-sm); color:var(--muted); line-height:1.6; }
+.revenue-card--gold h3 { color:var(--gold); }
+
+.resource-table { display:flex; flex-direction:column; border:1px solid #d0c8b8; border-radius:var(--radius); overflow:hidden; }
+.rt-row { display:grid; grid-template-columns:1.5fr 2fr 1fr; gap:var(--sp4); padding:var(--sp3) var(--sp5); border-bottom:1px solid #d0c8b8; font-size:var(--text-sm); align-items:center; }
+.rt-row:last-child { border-bottom:none; }
+.rt-header { background:#e8e0d0; font-weight:700; font-size:var(--text-xs); text-transform:uppercase; letter-spacing:1px; color:#4a5568; }
+.rt-row a { color:var(--teal-dim); font-weight:600; font-size:var(--text-xs); }
+.rt-row a:hover { text-decoration:underline; }
+@media(max-width:600px){ .rt-row { grid-template-columns:1fr; } .rt-header span:not(:first-child){ display:none; } }
+</style>
+
+<script src="../app.js"></script>
+<script src="../allibot.js"></script>
+</body>
+</html>
