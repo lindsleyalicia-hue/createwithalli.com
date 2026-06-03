@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create with Alli — Life Lived Out Loud & On-Chain</title>
+  <meta name="description" content="Hair colorist, Web3 educator, Amazon influencer. Florida girl building brands, teaching crypto in plain English, and sharing beauty, home, and everything in between." />
+  <meta name="keywords" content="createwithalli, alli, web3, crypto, amazon influencer, hair colorist, beauty, base chain, blockchain, content creator" />
+  <meta property="og:title" content="Create with Alli" />
+  <meta property="og:description" content="Life Lived Out Loud & On-Chain." />
+  <meta property="og:url" content="https://createwithalli.com" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<header class="site-header">
+  <a href="index.html" class="logo-wrap" aria-label="Create with Alli home">
+    <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <circle cx="16" cy="16" r="14" stroke="var(--gold)" stroke-width="1.5"/>
+      <path d="M10 22 L16 8 L22 22" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11.8 18h8.4" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="16" cy="8" r="1.5" fill="var(--accent)"/>
+    </svg>
+    <span class="logo-text">Create <em>with</em> Alli</span>
+  </a>
+
+  <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="pages/web3.html" class="nav-link">Web3</a>
+    <a href="pages/content.html" class="nav-link">Content</a>
+    <a href="pages/beauty.html" class="nav-link">Beauty</a>
+    <a href="pages/amazon.html" class="nav-link">Amazon</a>
+    <a href="pages/home-life.html" class="nav-link">Home & Life</a>
+  </nav>
+
+  <div class="header-actions">
+    <span class="live-badge"><span class="dot"></span>Live</span>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">WEST PALM BEACH · ONCHAIN · CONTENT CREATOR</p>
+      <h1 class="hero-title">Life Lived<br><em>Out Loud</em> &amp;<br>On-Chain.</h1>
+      <p class="hero-bio">Hair colorist. Web3 educator. Amazon influencer. Content creator. Florida girl building brands, teaching crypto in plain English, and sharing all of it — beauty, home, and everything in between.</p>
+      <div class="hero-pills">
+        <a href="pages/web3.html" class="pill pill--teal">◎ Web3 Alli</a>
+        <a href="pages/content.html" class="pill pill--outline">🎬 Content</a>
+        <a href="pages/beauty.html" class="pill pill--outline">✦ Beauty</a>
+        <a href="pages/amazon.html" class="pill pill--orange">● Amazon</a>
+        <a href="pages/home-life.html" class="pill pill--outline">🏡 Home & Life</a>
+        <span class="pill pill--dark">🤖 Claude 101 Certified</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="pages/web3.html" class="btn btn--primary">LEARN WEB3 WITH ME →</a>
+        <a href="#latest" class="btn btn--ghost">WATCH MY LATEST →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LIVE CRYPTO ═══ -->
+  <section class="section" id="crypto">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title"><span>📈</span> Live Crypto Prices</h2>
+        <span class="updated-tag" id="lastUpdated">Loading…</span>
+      </div>
+      <div id="errorBanner" class="error-banner" hidden></div>
+      <div class="crypto-grid" id="cryptoGrid">
+        <!-- skeleton -->
+        <div class="coin-card skeleton-card"><div class="sk sk-w40 mb2"></div><div class="sk sk-w70 mb3"></div><div class="sk sk-w55 mb1"></div><div class="sk sk-w35"></div></div>
+        <div class="coin-card skeleton-card"><div class="sk sk-w40 mb2"></div><div class="sk sk-w70 mb3"></div><div class="sk sk-w55 mb1"></div><div class="sk sk-w35"></div></div>
+        <div class="coin-card skeleton-card"><div class="sk sk-w40 mb2"></div><div class="sk sk-w70 mb3"></div><div class="sk sk-w55 mb1"></div><div class="sk sk-w35"></div></div>
+        <div class="coin-card skeleton-card"><div class="sk sk-w40 mb2"></div><div class="sk sk-w70 mb3"></div><div class="sk sk-w55 mb1"></div><div class="sk sk-w35"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTENT / LATEST ═══ -->
+  <section class="section section--light" id="latest">
+    <div class="section-inner">
+      <p class="section-eyebrow">WHERE TO FIND ME</p>
+      <h2 class="section-title-lg">Watch My Latest</h2>
+      <div class="content-grid">
+        <a href="https://www.tiktok.com/@fadesandhairshades" target="_blank" rel="noopener" class="content-card">
+          <div class="content-icon">♪</div>
+          <div class="content-label">TIKTOK & REELS</div>
+          <p class="content-desc">Short-form that educates, entertains, and sells.</p>
+          <span class="content-handle">@fadesandhairshades</span>
+        </a>
+        <a href="https://www.youtube.com/@createwithalli" target="_blank" rel="noopener" class="content-card">
+          <div class="content-icon">▶</div>
+          <div class="content-label">YOUTUBE</div>
+          <p class="content-desc">Long-form tutorials and Web3 explainers for beginners.</p>
+        </a>
+        <a href="https://www.tiktok.com/@alliopsdev" target="_blank" rel="noopener" class="content-card">
+          <div class="content-icon">🤖</div>
+          <div class="content-label">TIKTOK — AI & DEV</div>
+          <p class="content-desc">AlliOps Dev · AI agents · Web3 builds in real time.</p>
+          <span class="content-handle">@alliopsdev</span>
+        </a>
+        <a href="https://www.instagram.com/aliciareviewsit" target="_blank" rel="noopener" class="content-card">
+          <div class="content-icon">📸</div>
+          <div class="content-label">INSTAGRAM — AMAZON FINDS</div>
+          <p class="content-desc">Amazon · Tech · Beauty · Home. Everything I actually use.</p>
+          <span class="content-handle">@aliciareviewsit</span>
+        </a>
+        <a href="https://www.instagram.com/westpalmhairpro" target="_blank" rel="noopener" class="content-card">
+          <div class="content-icon">✂️</div>
+          <div class="content-label">INSTAGRAM — HAIR</div>
+          <p class="content-desc">Palm Beach Hair Artist. Color, extensions, the real formulas.</p>
+          <span class="content-handle">@westpalmhairpro</span>
+        </a>
+        <a href="https://www.instagram.com/alliopsec" target="_blank" rel="noopener" class="content-card">
+          <div class="content-icon">🔐</div>
+          <div class="content-label">INSTAGRAM — ALLIOPS</div>
+          <p class="content-desc">AlliOpsDev · AI Dev · Agents · OPSEC · Web3 builds.</p>
+          <span class="content-handle">@alliopsec</span>
+        </a>
+        <a href="https://www.instagram.com/official_winniethepooch" target="_blank" rel="noopener" class="content-card content-card--winnie">
+          <div class="content-icon">🐾</div>
+          <div class="content-label">WYNSTON — CHIEF MOOD OFFICER</div>
+          <p class="content-desc">Pet Influencer · Amazon Finds · Brand UGC · Palm Beach. Running AlliOps morale since 2022.</p>
+          <span class="content-handle">@official_winniethepooch</span>
+        </a>
+        <div class="content-card content-card--cred">
+          <div class="content-icon">🎓</div>
+          <div class="content-label">CREDENTIALS</div>
+          <p class="content-desc">SheFi S16 Graduate · Claude Code 101 Certified · Harvard CS50 Enrolled · CS50 Cybersecurity Next</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WEB3 SNAPSHOT ═══ -->
+  <section class="section" id="web3">
+    <div class="section-inner">
+      <a href="pages/web3.html" class="btn btn--primary mb-section">LEARN WEB3 WITH ME →</a>
+      <div class="web3-grid">
+        <a href="pages/web3.html#base" class="web3-card">
+          <div class="web3-icon">⬡</div>
+          <div class="web3-name">Base</div>
+          <div class="web3-sub">Home Chain</div>
+        </a>
+        <a href="pages/web3.html#allitrade" class="web3-card web3-card--accent">
+          <div class="web3-icon">📊</div>
+          <div class="web3-name">ALLITRADE</div>
+          <div class="web3-sub">Signal Agent</div>
+        </a>
+        <a href="pages/web3.html#shefi" class="web3-card">
+          <div class="web3-icon">🎓</div>
+          <div class="web3-name">SheFi</div>
+          <div class="web3-sub">Season 16 Graduate</div>
+        </a>
+        <a href="pages/web3.html#portfolio" class="web3-card">
+          <div class="web3-icon">🔗</div>
+          <div class="web3-name">4 Assets</div>
+          <div class="web3-sub">Active Positions</div>
+        </a>
+        <div class="web3-quote">
+          <span class="quote-icon">💡</span>
+          <blockquote>"Crypto in plain English — because everyone deserves financial sovereignty."</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AMAZON ═══ -->
+  <section class="section section--light" id="amazon">
+    <div class="section-inner">
+      <p class="section-eyebrow">03 — AMAZON & LIFESTYLE</p>
+      <h2 class="section-title-lg">Curated by Someone Who <em>Actually Uses It.</em></h2>
+      <p class="section-body">My Amazon Storefront spans five niches — because life doesn't fit in one box. From the salon floor to the crypto desk to a South Florida renovation, every recommendation is something I've tested and loved.</p>
+
+      <div class="amazon-categories">
+        <a href="pages/amazon.html#beauty" class="amazon-cat">
+          <span class="cat-icon">💄</span>
+          <div>
+            <div class="cat-name">BEAUTY</div>
+            <div class="cat-desc">Salon-quality at home picks</div>
+          </div>
+          <span class="cat-badge">ALLI APPROVED</span>
+        </a>
+        <a href="pages/amazon.html#web3" class="amazon-cat">
+          <span class="cat-icon">💻</span>
+          <div>
+            <div class="cat-name">TECH & WEB3</div>
+            <div class="cat-desc">Gear for the on-chain life</div>
+          </div>
+          <span class="cat-badge cat-badge--purple">TECH PICK</span>
+        </a>
+        <a href="pages/amazon.html#home" class="amazon-cat">
+          <span class="cat-icon">🏠</span>
+          <div>
+            <div class="cat-name">HOME & LIFESTYLE</div>
+            <div class="cat-desc">Renovation finds and home inspo</div>
+          </div>
+          <span class="cat-badge">ALLI APPROVED</span>
+        </a>
+        <a href="pages/amazon.html#salon" class="amazon-cat">
+          <span class="cat-icon">✂️</span>
+          <div>
+            <div class="cat-name">SALON PROFESSIONAL</div>
+            <div class="cat-desc">Pro products and salon essentials</div>
+          </div>
+          <span class="cat-badge cat-badge--gold">PRO PICK</span>
+        </a>
+      </div>
+
+      <!-- Trending Picks — now with real structure -->
+      <div class="trending-header">
+        <h3 class="trending-title">🔥 Trending Right Now</h3>
+        <span class="trend-meta" id="trendMeta">Updating with Amazon trends…</span>
+      </div>
+      <div class="amazon-picks" id="amazonPicks">
+        <!-- Populated by worker / JS -->
+        <div class="pick-card">
+          <span class="pick-badge pick-badge--red">VIRAL PICK</span>
+          <div class="pick-title" id="pick1Title">Loading trending picks…</div>
+          <div class="pick-desc" id="pick1Desc">Fetching from Amazon trend radar</div>
+          <a class="pick-btn" id="pick1Link" href="https://www.amazon.com/shop/createwithalli" target="_blank" rel="noopener">Shop Now</a>
+        </div>
+        <div class="pick-card">
+          <span class="pick-badge pick-badge--blue">BEST SELLER</span>
+          <div class="pick-title" id="pick2Title">Loading trending picks…</div>
+          <div class="pick-desc" id="pick2Desc">Fetching from Amazon trend radar</div>
+          <a class="pick-btn" id="pick2Link" href="https://www.amazon.com/shop/createwithalli" target="_blank" rel="noopener">Shop Now</a>
+        </div>
+        <div class="pick-card">
+          <span class="pick-badge pick-badge--gold">ALLI'S FAVE</span>
+          <div class="pick-title" id="pick3Title">Loading trending picks…</div>
+          <div class="pick-desc" id="pick3Desc">Fetching from Amazon trend radar</div>
+          <a class="pick-btn" id="pick3Link" href="https://www.amazon.com/shop/createwithalli" target="_blank" rel="noopener">Shop Now</a>
+        </div>
+      </div>
+
+      <a href="https://www.amazon.com/shop/createwithalli" target="_blank" rel="noopener" class="btn btn--amazon mt-section">VISIT MY STOREFRONT →</a>
+    </div>
+  </section>
+
+  <!-- ═══ AI AGENT INSIGHTS ═══ -->
+  <section class="section" id="insights">
+    <div class="section-inner">
+      <h2 class="section-title"><span>🤖</span> AI Agent Insights</h2>
+      <div class="insights-grid">
+        <div class="insight-card">
+          <h4 class="insight-label">Crypto Pulse</h4>
+          <div class="insight-body loading" id="cryptoInsight">
+            <div class="spinner"></div> Waiting for prices…
+          </div>
+          <button class="insight-refresh" onclick="runCryptoAgent()">↻ Refresh</button>
+        </div>
+        <div class="insight-card">
+          <h4 class="insight-label">Amazon Trend Radar</h4>
+          <div class="insight-body loading" id="amazonInsight">
+            <div class="spinner"></div> Loading trends…
+          </div>
+          <button class="insight-refresh" onclick="runAmazonAgent()">↻ Refresh</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HAIR / BEAUTY ═══ -->
+  <section class="section section--dark2" id="hair">
+    <div class="section-inner">
+      <p class="section-eyebrow" style="color:var(--copper)">ALICIA ANN HAIR</p>
+      <h2 class="section-title-lg" style="color:var(--cream)">Color is <em style="color:var(--copper)">Chemistry.</em><br>Hair is Art.</h2>
+      <p class="section-body" style="color:#b0a090">Palm Beach Hair Co. — where every formula is intentional and every client leaves with their best hair. I document the process, share the techniques, and protect the craft.</p>
+      <div class="specialty-tags">
+        <span class="tag">Shades EQ</span>
+        <span class="tag">DIA Light</span>
+        <span class="tag">Foilayage</span>
+        <span class="tag">Tape-In Extensions</span>
+        <span class="tag">IBE Wefts</span>
+        <span class="tag">Color Formulation</span>
+      </div>
+      <a href="pages/beauty.html" class="btn btn--copper mt-section">BOOK A SERVICE →</a>
+    </div>
+  </section>
+
+  <!-- ═══ EMAIL ═══ -->
+  <section class="section section--gold" id="newsletter">
+    <div class="section-inner newsletter-inner">
+      <h2 class="newsletter-title">Join the Inner Circle.</h2>
+      <p class="newsletter-sub">Content, crypto tips, beauty finds, and home inspo — straight to your inbox.</p>
+      <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="your@email.com" required class="newsletter-input" aria-label="Email address" />
+        <button type="submit" class="btn btn--dark">LET'S GO</button>
+      </form>
+      <p class="newsletter-note" id="subscribeMsg"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">Create <em>with</em> Alli</span>
+      <p class="footer-tagline">© 2026 Create with Alli · West Palm Beach, FL</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="https://www.instagram.com/aliciareviewsit" target="_blank" rel="noopener">@aliciareviewsit</a>
+      <a href="https://www.instagram.com/westpalmhairpro" target="_blank" rel="noopener">@westpalmhairpro</a>
+      <a href="https://www.instagram.com/alliopsec" target="_blank" rel="noopener">@alliopsec</a>
+      <a href="https://www.tiktok.com/@fadesandhairshades" target="_blank" rel="noopener">@fadesandhairshades</a>
+      <a href="https://www.tiktok.com/@alliopsdev" target="_blank" rel="noopener">@alliopsdev</a>
+      <a href="https://www.youtube.com/@createwithalli" target="_blank" rel="noopener">YOUTUBE</a>
+      <a href="https://www.amazon.com/shop/createwithalli" target="_blank" rel="noopener">AMAZON</a>
+      <a href="https://www.instagram.com/official_winniethepooch" target="_blank" rel="noopener">🐾 WYNSTON</a>
+      <a href="pages/web3.html">WEB3</a>
+    </nav>
+    <p class="footer-legal">Prices via CoinGecko · Updated every 60s · Amazon links may be affiliate links</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

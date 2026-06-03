@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home & Life — Create with Alli</title>
+  <meta name="description" content="South Florida home renovation, lifestyle, and everyday finds from Alli. Real recommendations, real life." />
+  <meta name="keywords" content="south florida home renovation, florida lifestyle blogger, home finds amazon, createwithalli home" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="logo-wrap">
+    <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <circle cx="16" cy="16" r="14" stroke="var(--gold)" stroke-width="1.5"/>
+      <path d="M10 22 L16 8 L22 22" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11.8 18h8.4" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="16" cy="8" r="1.5" fill="var(--accent)"/>
+    </svg>
+    <span class="logo-text">Create <em>with</em> Alli</span>
+  </a>
+  <nav class="site-nav" id="siteNav">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="web3.html" class="nav-link">Web3</a>
+    <a href="content.html" class="nav-link">Content</a>
+    <a href="beauty.html" class="nav-link">Beauty</a>
+    <a href="amazon.html" class="nav-link">Amazon</a>
+    <a href="home-life.html" class="nav-link active">Home & Life</a>
+  </nav>
+  <div class="header-actions">
+    <span class="live-badge"><span class="dot"></span>Live</span>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <p class="page-eyebrow">HOME & LIFESTYLE</p>
+    <h1 class="page-title">South Florida Living.<br><em>Renovated, Curated,<br>Documented.</em></h1>
+    <p class="page-subtitle">My home is a perpetual renovation project — and I document every find, every upgrade, and every splurge-or-save decision in real time.</p>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="section section--light">
+    <div class="section-inner">
+      <p class="section-eyebrow">WHAT I COVER</p>
+      <h2 class="section-title-lg">The Full <em>Florida Life</em></h2>
+      <div class="hl-grid">
+        <div class="hl-card">
+          <span class="hl-icon">🏠</span>
+          <h3 class="hl-title">Home Renovation</h3>
+          <p class="hl-body">South Florida renovation finds — from tile selections to furniture dupes. I document the process, share the receipts, and link everything I find on Amazon.</p>
+        </div>
+        <div class="hl-card">
+          <span class="hl-icon">🌿</span>
+          <h3 class="hl-title">Outdoor Living</h3>
+          <p class="hl-body">Florida outdoor spaces are where life actually happens. Patio upgrades, outdoor furniture, string lights, and the constant battle against humidity.</p>
+        </div>
+        <div class="hl-card">
+          <span class="hl-icon">🥗</span>
+          <h3 class="hl-title">Health & Wellness</h3>
+          <p class="hl-body">Smoothie bowls, meal prep, strength training fits into a 60-hour work week. I figure out the systems so you don't have to start from scratch.</p>
+        </div>
+        <div class="hl-card">
+          <span class="hl-icon">☕</span>
+          <h3 class="hl-title">Kitchen & Entertaining</h3>
+          <p class="hl-body">The tools I actually use — not what influencers say they use. Air fryer finds, organisation systems, and the coffee setup that gets me through morning deploys.</p>
+        </div>
+        <div class="hl-card">
+          <span class="hl-icon">💡</span>
+          <h3 class="hl-title">Creator Setup</h3>
+          <p class="hl-body">My desk, my light ring, my recording setup. If you want to know what makes good content from a technical gear perspective, this is the section for you.</p>
+        </div>
+        <div class="hl-card">
+          <span class="hl-icon">🌴</span>
+          <h3 class="hl-title">Florida Essentials</h3>
+          <p class="hl-body">SPF, cooling gear, hurricane prep (yes really), and the very specific items you only need if you live below 26° latitude.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMAZON PICKS FOR HOME -->
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title" style="margin-bottom:var(--sp6)">🛍️ My Home Picks This Month</h2>
+      <div class="trending-header" style="margin-bottom:var(--sp4)">
+        <span class="trend-meta" id="trendMeta">Auto-updated monthly</span>
+      </div>
+      <div class="amazon-picks" id="amazonPicks">
+        <div class="pick-card" style="background:var(--card);border-color:var(--border)">
+          <span class="pick-badge pick-badge--red">VIRAL PICK</span>
+          <div class="pick-title" id="pick1Title" style="color:var(--text)">Loading…</div>
+          <div class="pick-desc" id="pick1Desc"></div>
+          <a class="pick-btn" id="pick1Link" href="https://www.amazon.com/shop/createwithalli" target="_blank" rel="noopener">Shop Now</a>
+        </div>
+        <div class="pick-card" style="background:var(--card);border-color:var(--border)">
+          <span class="pick-badge pick-badge--blue">BEST SELLER</span>
+          <div class="pick-title" id="pick2Title" style="color:var(--text)">Loading…</div>
+          <div class="pick-desc" id="pick2Desc"></div>
+          <a class="pick-btn" id="pick2Link" href="https://www.amazon.com/shop/createwithalli" target="_blank" rel="noopener">Shop Now</a>
+        </div>
+        <div class="pick-card" style="background:var(--card);border-color:var(--border)">
+          <span class="pick-badge pick-badge--gold">ALLI'S FAVE</span>
+          <div class="pick-title" id="pick3Title" style="color:var(--text)">Loading…</div>
+          <div class="pick-desc" id="pick3Desc"></div>
+          <a class="pick-btn" id="pick3Link" href="https://www.amazon.com/shop/createwithalli" target="_blank" rel="noopener">Shop Now</a>
+        </div>
+      </div>
+      <a href="amazon.html" class="btn btn--amazon mt-section">VIEW ALL AMAZON PICKS →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">Create <em>with</em> Alli</span>
+      <p class="footer-tagline">© 2026 Create with Alli · West Palm Beach, FL</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="https://www.instagram.com/createwithalli" target="_blank" rel="noopener">INSTAGRAM</a>
+      <a href="https://www.tiktok.com/@fadesandhairshades" target="_blank" rel="noopener">TIKTOK</a>
+      <a href="https://www.youtube.com/@createwithalli" target="_blank" rel="noopener">YOUTUBE</a>
+      <a href="https://www.amazon.com/shop/createwithalli" target="_blank" rel="noopener">AMAZON</a>
+      <a href="web3.html">WEB3</a>
+    </nav>
+    <p class="footer-legal">Amazon links may be affiliate links · As an Amazon Associate I earn from qualifying purchases</p>
+  </div>
+</footer>
+
+<style>
+.hl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: var(--sp4); }
+.hl-card { background: #fff; border: 1px solid #e0dbd3; border-radius: var(--radius); padding: var(--sp6); }
+.hl-icon  { font-size: 2rem; display: block; margin-bottom: var(--sp3); }
+.hl-title { font-size: var(--text-base); font-weight: 700; color: #1a1a2e; margin-bottom: var(--sp3); }
+.hl-body  { font-size: var(--text-sm); color: #6b6b88; line-height: 1.7; }
+</style>
+
+<script src="../app.js"></script>
+</body>
+</html>

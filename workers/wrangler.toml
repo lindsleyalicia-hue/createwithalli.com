@@ -1,0 +1,28 @@
+name = "createwithalli-picks"
+main = "amazon-worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+AMAZON_REGION = "us-east-1"
+
+# Add secrets via CLI (never commit these):
+#   wrangler secret put AMAZON_ACCESS_KEY
+#   wrangler secret put AMAZON_SECRET_KEY
+#   wrangler secret put AMAZON_ASSOCIATE_TAG
+
+---
+# TREND SCANNER WORKER — separate deployment
+name = "createwithalli-trends"
+main = "amazon-trends-worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Auto-run every 6 hours
+[triggers]
+crons = ["0 */6 * * *"]
+
+# Optional: KV cache for trend data
+# [[kv_namespaces]]
+# binding = "TREND_CACHE"
+# id = "YOUR_KV_NAMESPACE_ID"
