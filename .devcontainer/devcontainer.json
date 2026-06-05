@@ -1,0 +1,75 @@
+{
+  "name": "createwithalli.com — Cloudflare Deploy Ready",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+
+  // ── Features installed on top of Node 22 LTS ──
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts",
+      "nvmVersion": "latest"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest",
+      "ppa": true
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "latest"
+    }
+  },
+
+  // ── Install Wrangler + Cloudflare tooling after container builds ──
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  // ── VS Code extensions auto-installed ──
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "cloudflare.cloudflare-workers-bindings",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "formulahendry.auto-rename-tag",
+        "ecmel.vscode-html-css",
+        "christian-kohler.path-intellisense",
+        "PKief.material-icon-theme",
+        "GitHub.copilot",
+        "GitHub.vscode-pull-request-github",
+        "ms-vscode.live-server"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "editor.wordWrap": "on",
+        "files.autoSave": "onFocusChange",
+        "liveServer.settings.port": 5500,
+        "liveServer.settings.donotShowInfoMsg": true
+      }
+    }
+  },
+
+  // ── Port forwarding ──
+  // 8787 = wrangler dev local server
+  // 5500 = Live Server for static HTML preview
+  "forwardPorts": [8787, 5500],
+  "portsAttributes": {
+    "8787": {
+      "label": "Wrangler Dev",
+      "onAutoForward": "notify"
+    },
+    "5500": {
+      "label": "Live Preview",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
+  // ── Run as non-root ──
+  "remoteUser": "node",
+
+  // ── Environment hints (actual secrets go in Codespace secrets, not here) ──
+  "remoteEnv": {
+    "CLOUDFLARE_ACCOUNT_ID": "${localEnv:CLOUDFLARE_ACCOUNT_ID}",
+    "CLOUDFLARE_API_TOKEN": "${localEnv:CLOUDFLARE_API_TOKEN}"
+  }
+}
