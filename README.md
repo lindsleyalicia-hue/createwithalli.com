@@ -1,4 +1,4 @@
-# createwithalli.com
+# AlliOPSEC.xyz
 
 Personal brand portfolio for **Alicia Ann** — Hair colorist · Web3 educator · Amazon influencer · AI agent builder · Content creator.
 
