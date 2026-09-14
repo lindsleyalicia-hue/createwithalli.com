@@ -58,16 +58,25 @@
 }
 
 .create-reveal {
+  /* Fail-open: content visible unless JS opts into motion */
+  opacity: 1;
+  transform: none;
+}
+.js-motion .create-reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 700ms cubic-bezier(0.16, 1, 0.3, 1), transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
 }
-.create-reveal.is-in {
+.js-motion .create-reveal.is-in {
   opacity: 1;
   transform: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .create-reveal { opacity: 1; transform: none; transition: none; }
+  .js-motion .create-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
   #createCanvas { display: none !important; }
   .create-hero__fallback { display: flex !important; }
 }
@@ -95,7 +104,7 @@
 .create-lane__title {
   font-family: var(--font-display);
   font-size: var(--text-lg);
-  color: var(--cream);
+  color: var(--text);
 }
 .create-lane__body { font-size: var(--text-sm); color: var(--muted); line-height: 1.7; flex: 1; }
 .create-lane__link {
@@ -123,9 +132,10 @@
 .create-chapter__title {
   font-family: var(--font-display);
   font-size: var(--text-xl);
-  color: var(--cream);
+  color: var(--text);
   margin-bottom: var(--sp4);
 }
+.section--light .create-chapter__title { color: var(--navy); }
 .create-chapter__title em { color: var(--gold); font-style: italic; }
 .create-chapter__body { font-size: var(--text-sm); color: var(--muted); line-height: 1.75; max-width: 54ch; }
 
@@ -166,8 +176,9 @@
 .create-cta-band h3 {
   font-family: var(--font-display);
   font-size: var(--text-xl);
-  color: var(--cream);
+  color: var(--text);
 }
+.section--light .create-cta-band h3 { color: var(--navy); }
 .create-cta-band p { font-size: var(--text-sm); color: var(--muted); max-width: 42ch; margin-top: var(--sp2); }
 .create-cta-actions { display: flex; flex-wrap: wrap; gap: var(--sp3); }
 

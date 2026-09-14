@@ -14,13 +14,14 @@
     if (fallback) fallback.classList.add('is-visible');
   }
 
-  // Scroll reveals
+  // Scroll reveals — opt-in via .js-motion so content stays visible if this script never runs
   const nodes = document.querySelectorAll('.create-reveal');
   if (reduce) {
     nodes.forEach((n) => n.classList.add('is-in'));
     showFallback();
     return;
   }
+  document.documentElement.classList.add('js-motion');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(
       (entries) => {
@@ -47,7 +48,7 @@
   // Future: load ../models/create-hero.glb via GLTFLoader + DRACOLoader when asset exists.
 
   try {
-    renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
+    renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'low-power' });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
     if (THREE.SRGBColorSpace) renderer.outputColorSpace = THREE.SRGBColorSpace;
     else if (THREE.sRGBEncoding) renderer.outputEncoding = THREE.sRGBEncoding;
