@@ -13,6 +13,7 @@ Personal brand portfolio for **Alicia Ann** — Hair colorist · Web3 educator �
 | Page | Description |
 |---|---|
 | `/` | Homepage — hero, live crypto ticker, Amazon picks, AI insights |
+| `/pages/create.html` | Create Studio — EMERGENT immersive brand page (glTF-ready hero) |
 | `/pages/web3.html` | Web3 education — Base chain, ALLITRADE, SheFi, portfolio |
 | `/pages/content.html` | Content creation — TikTok, YouTube, Instagram, brand collabs |
 | `/pages/beauty.html` | Palm Beach Hair Co — services, booking, Alicia Ann Hair |
